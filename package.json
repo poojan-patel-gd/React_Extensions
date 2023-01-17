@@ -12,10 +12,6 @@
     "test-e2e": "cross-env NODE_ENV=test mocha -r ./test/setup-app test/e2e",
     "test": "cross-env NODE_ENV=test mocha -r ./test/setup-app test/app"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jhen0409/react-chrome-extension-boilerplate.git"
-  },
   "keywords": ["chrome", "extension", "react", "redux", "hot reload", "webpack", "boilerplate"],
   "author": "Jhen <developer@jhen.me>",
   "license": "MIT",
