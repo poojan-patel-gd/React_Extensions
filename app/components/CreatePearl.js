@@ -1,17 +1,24 @@
-import React, { PropTypes, Component } from 'react';
+import React, {PropTypes, Component} from 'react';
 import style from './createPearl.css'
+
 export default class CreatePearl extends Component {
 
     static propTypes = {
+        urls: PropTypes.object.isRequired,
     };
 
     constructor(props, context) {
         super(props, context);
 
         this.state = {
-
+            url: this.props.url || ''
         }
     }
+
+    fetchMetaData() {
+
+    }
+
 
     render() {
         return (
@@ -21,15 +28,15 @@ export default class CreatePearl extends Component {
                     <div className={style.form}>
                         <div>
                             <label>Category</label>
-                            <input type="text" className={style["form-control"]} />
+                            <input type="text" className={style["form-control"]}/>
                         </div>
                         <div>
                             <label>URL</label>
-                            <input type="text" className={style["form-control"]} />
+                            <input type="text" value={this.state.url} className={style["form-control"]}/>
                         </div>
                         <div>
                             <label>Title</label>
-                            <input type="text" className={style["form-control"]} />
+                            <input type="text" className={style["form-control"]}/>
                         </div>
                         <div>
                             <label>Type</label>
@@ -44,10 +51,10 @@ export default class CreatePearl extends Component {
                         </div>
                         <div>
                             <label>Description</label>
-                            <textarea rows={2} className={style["form-control"]} />
+                            <textarea rows={2} className={style["form-control"]}/>
                         </div>
                         <button className={style.addBtn}> Add</button>
-                     </div>
+                    </div>
                 </form>
             </div>
         );

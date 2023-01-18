@@ -30,7 +30,7 @@ export default class App extends Component {
       console.log('urls', urls)
     return (
       <div className={style.normal}>
-        <CreatePearl />
+        <CreatePearl url={urls.url}/>
         {/*<Header addTodo={actions.addTodo} />*/}
         {/*<MainSection todos={todos} actions={actions} />*/}
       </div>
