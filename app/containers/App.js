@@ -6,6 +6,7 @@ import MainSection from '../components/MainSection';
 import * as TodoActions from '../actions/todos';
 import * as UrlActions from '../actions/urls';
 import style from './App.css';
+import CreatePearl from "../components/CreatePearl";
 
 @connect(
   state => ({
@@ -29,8 +30,9 @@ export default class App extends Component {
       console.log('urls', urls)
     return (
       <div className={style.normal}>
-        <Header addTodo={actions.addTodo} />
-        <MainSection todos={todos} actions={actions} />
+        <CreatePearl />
+        {/*<Header addTodo={actions.addTodo} />*/}
+        {/*<MainSection todos={todos} actions={actions} />*/}
       </div>
     );
   }

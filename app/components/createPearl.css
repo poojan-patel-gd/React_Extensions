@@ -1,0 +1,58 @@
+.form-control {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
+
+
+.formMain{
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(8, 24, 32) 0%, rgb(6, 30, 47) 52%, rgb(67, 87, 109) 100%) 0 0 no-repeat padding-box padding-box transparent;
+    color: white;
+}
+
+.formMain h2{
+    margin: 0 0 20px 0;
+}
+
+.form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.form > div{
+    margin-bottom: 6px;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 6px!important;
+}
+
+.addBtn{
+    background: white;
+    padding: 10px;
+    color: black;
+}
+
+.typeBtn{
+    padding: 10px 16px;
+    background: white;
+    color: black;
+    width: 80px;
+}
+
+.typeBtnMain{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
