@@ -3,7 +3,8 @@ import * as ActionTypes from '../constants/ActionTypes';
 const initialState = [{
   text: 'Use Redux',
   completed: false,
-  id: 0
+  id: 0,
+  url: '',
 }];
 
 const actionsMap = {
@@ -41,6 +42,12 @@ const actionsMap = {
   },
   [ActionTypes.CLEAR_COMPLETED](state/*, action*/) {
     return state.filter(todo => todo.completed === false);
+  },
+  [ActionTypes.GET_URL](state/*, action*/) {
+    return state.filter(todo => todo.url);
+  },
+  [ActionTypes.GET_URL](state/*, action*/) {
+    return state.filter(todo => todo.url === state);
   }
 };
 

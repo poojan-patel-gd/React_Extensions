@@ -4,14 +4,28 @@ import TodoTextInput from './TodoTextInput';
 export default class Header extends Component {
 
   static propTypes = {
-    addTodo: PropTypes.func.isRequired
+    addTodo: PropTypes.func.isRequired,
+    text: PropTypes.string,
   };
+
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      text: this.props.text || ''
+    };
+  }
+
 
   handleSave = (text) => {
     if (text.length !== 0) {
       this.props.addTodo(text);
     }
   };
+
+  getUrl = () => {
+
+    this.setState({ text: 'dasdasdasd' });
+  }
 
   render() {
     return (
